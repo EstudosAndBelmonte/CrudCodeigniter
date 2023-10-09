@@ -5,48 +5,36 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>TDAHjudando</title>
+    <title>CRUD</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
+    <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
 
     <!-- Favicons -->
     <link href="<?php echo base_url('/assets/img/TDAHjudandoIcon.png') ?>" rel="icon">
     <link href="<?php echo base_url('/assets/img/apple-touch-icon.png') ?>" rel="apple-touch-icon">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="<?php echo base_url('/assets/vendor/animate.css/animate.min.css') ?>" rel="stylesheet">
-    <link href="<?php echo base_url('/assets/vendor/aos/aos.css" rel="stylesheet') ?>">
-    <link href="<?php echo base_url('/assets/vendor/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
-    <link href="<?php echo base_url('/assets/vendor/bootstrap-icons/bootstrap-icons.css') ?>" rel="stylesheet">
-    <link href="<?php echo base_url('/assets/vendor/boxicons/css/boxicons.min.css') ?>" rel="stylesheet">
-    <link href="<?php echo base_url('/assets/vendor/glightbox/css/glightbox.min.css') ?>" rel="stylesheet">
-    <link href="<?php echo base_url('/assets/vendor/swiper/swiper-bundle.min.css') ?>" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
-    <link href="<?php echo base_url('/assets/css/style.css') ?>" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bg-secondary">
+    <script>
+        base_url = "<?php echo base_url() ?>"
+    </script>
+
     <!-- ======= Header ======= -->
-    <div class="col-sm-12">
-        <header class="fixed-top d-flex align-items-cente bg-dark">
-            <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
-                <h1 class="logo me-auto me-lg-0"><a href="<?= base_url() ?>">CRUD</a></h1>
-                <nav id="navbar" class="navbar order-last order-lg-0">
-                    <ul>
-                        <li><a class="nav-link scrollto active" href="<?= base_url() ?>">Home</a></li>
-                        </li>
-                        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                    </ul>
-                    <i class="bi bi-list mobile-nav-toggle"></i>
-                </nav><!-- .navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="<?= base_url() ?>">CRUD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="<?= base_url() ?>">Home</a>
+                    </li>
+                </ul>
             </div>
-        </header><!-- End Header -->
-    </div>
-    <div class="container mb-5">
-        <div>.</div>
-    </div>
+        </div>
+    </nav>

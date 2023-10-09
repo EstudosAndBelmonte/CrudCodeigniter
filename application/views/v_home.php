@@ -6,10 +6,10 @@
                 <h1>Bem-vindo ao <span>CRUD</span></h1>
 
                 <div class="btns">
-                    <a href="<?= base_url('index.php/login') ?>" class="btn-menu animated fadeInUp scrollto">Login</a>
-                    <a href="<?= base_url('index.php/cadastro') ?>" class="btn-book animated fadeInUp scrollto">Inscrever-se</a>
+                    <a type="button" class="btn btn-outline-warning" href="<?= base_url('index.php/login') ?>">Login</a>
+                    <a type="button" class="btn btn-outline-warning" href="<?= base_url('index.php/cadastro') ?>">Inscrever-se</a>
                 </div>
             </div>
         </div>
     </div>
-</section><!-- End Hero -->
+</section>

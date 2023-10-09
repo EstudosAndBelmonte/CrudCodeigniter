@@ -9,4 +9,18 @@ class cadastro extends CI_Controller
         $this->load->view('v_cadastro');
         $this->load->view('includes/footer');
     }
+
+    public function cadastrar()
+    {
+        $teste = $this->input->post();
+
+        echo "<pre>";
+        print_r($teste);
+        echo "</pre>";
+        exit;
+
+        $this->load->model('M_cadastrar');
+        $retorno = $this->m_cadastrar->cadastrar();
+        echo json_encode($retorno);
+    }
 }
